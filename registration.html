@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 680px; 
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.header {
+  padding: 5px;
+  text-align: left;
+  background: #1abc9c;
+  color: white;
+
+}
+.content {padding:15px;}
+.footer {
+   position: fixed;
+   height: 30px; 
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: lightgrey;
+   color: white;
+   text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+ 
+  <p><font style="color:black"><b>Workshop Registration</b></font></p>
+</div>
+<div class="row">
+  <div class="column" >
+    <form name="Activity-2" method="post"> 
+  <h1></h1>
+       <h2 style="font-size: 17px;"><u><font style="color:black;">Register now while seats are available !</font></u></h2>&nbsp
+    
+      <div >
+      <label for="fname"><b>First name</b> <font style="color:red;">* </font> 
+        <input style="margin-left:70px" type="text" required name="txtFirstName" id="fname" size="30" /></br>
+      </label>&nbsp
+      </div></br>
+      
+
+
+       <div >
+       <label for="fname"><b>Last name</b><font style="color:red;">* </font>  
+        <input style="margin-left:75px" type="text" required name="txtFirstName" id="fname" size="30" />
+      </label>&nbsp
+    </div></br>
+
+
+   <div>
+<p><b>Please select your Gender :</b></p>
+  <input type="radio" id="m" name="male" value="male">
+  <label for="age1">Male</label><br>
+  <input type="radio" id="f" name="female" value="female">
+  <label for="age2">Female</label><br>   
+   </div></br>
+
+     <div >
+      <label for="fname"><b>Company/Institution</b><font style="color:red;">* </font> 
+        <input style="margin-left:10px" type="text" required name="txtFirstName" id="fname" size="30" />
+      </label>
+      </div></br></br>
+
+
+      <div >
+       <label for="fname"><b>Address</b><font style="color:red;">* </font>  
+        <input style="margin-left:90px" type="text" required name="txtFirstName" id="fname" width="48" size="30" />
+      </label>
+    </div></br></br>
+
+      <div >
+       <label for="fname"><b>City</b>
+        <input style="margin-left:125px" type="text" required name="txtFirstName" id="fname" size="30" />
+      </label>
+    </div></br></br>
+
+
+    <div>
+    <label for="cars"><b>State/Province/Region</b></label>
+  <select style="margin-left:5px"id="state"  name="state">
+    <option >AP</option>
+    <option >Telangana</option>
+    <option >Tamilnadu</option>
+    <option >Hyd</option>
+  </select>
+  </div></br></br>
+
+   <div>
+    <label  for="cars"><b>Country</b></label>
+  <select style="margin-left:100px" id="cars" name="cars">
+    <option >India</option>
+    <option >US</option>
+  </select>
+  </div></br></br>
+
+<div>
+       <label for="fname"><b>Email</b><font style="color:red;">* </font> 
+        <input style="margin-left:105px" type="text" required name="txtFirstName" id="fname" size="30" />
+      </label>
+    </div></br></br>
+
+   <div>
+       <label for="fname"><b>Phone Number</b><font style="color:red;">* </font>  
+        <input style="margin-left:47px" type="text" required name="txtFirstName" id="fname" size="30" />
+      </label>
+    </div></br></br>
+ </form>
+
+  </div>
+
+
+
+
+  <div class="column">
+   <form >
+   <p style="font-size:20px"><u><b>Lunch!</b></u></p></br>
+  <div>
+      <label  for="fname" size="30"><b>Meal Preference:</b> 
+        <select id="meal" name="meal">
+    <option >Select One Of The Meals given below</option>
+    <option >Food</option>
+    <option >Chicken</option>
+    <option >Mutton</option>
+
+  </select>
+      </label>
+      </div></br></br>
+
+  <p style="font-size:20px"><u><b>Payment Details!</b></u></p></br>
+
+       
+ 
+  <label  for="fname"><b>Payment Mode : </b>
+  <input style="margin-left:60px"type="checkbox" name="cash" value="cash">
+  <label  for="cash"> Cash</label><br>
+  <input style="margin-left:187px" type="checkbox" name="cash" value="cash">
+  <label for="cash"> Cheque</label><br>
+  <input style="margin-left:187px" type="checkbox" name="dd" value="dd">
+  <label for="dd">Demand Draft</label><br><br>
+  </label>
+  
+       <div>
+      <label for="fname"><b>DD Cheque No.:</b> 
+        <input type="text" required name="txtFirstName" id="fname" size="35" />
+      </label>
+      </div></br></br>
+
+       
+       <div >
+      <label for="fname"><b>Drawn on(Bank): </b>
+        <input type="text" required name="txtFirstName" id="fname" size="35" />
+      </label>
+      </div></br></br>
+      
+        <div >
+      <label for="fname"><b>Payable At: </b>
+        <input type="text" required name="txtFirstName" id="fname" size="35" />
+      </label>
+      </div></br></br>
+
+
+ </form>
+  </div>
+</div>
+
+
+<div class="footer">
+    
+
+<button style="background-color:MediumSeaGreen; border-color:lightGrey; color:white" type="submit" form="nameform" value="Submit">Submit</button>
+<button style="background-color:MediumSeaGreen; border-color:lightGrey; color:white" type="Reset" form="nameform" value="Reset">Reset</button>
+
+
+
+
+</body>
+
+</html>
